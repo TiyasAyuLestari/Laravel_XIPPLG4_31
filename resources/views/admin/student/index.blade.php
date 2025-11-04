@@ -36,9 +36,23 @@
                 <td>{{ $student->jenis_kelamin }}</td>
                 <td>{{ $student->nisn }}</td>
                 <td>
-                  <a href="{{ route('admin.students.edit', $student->id) }}" class="btn btn-warning btn-sm">
-                    <i class="fas fa-edit"></i> Edit
+                  <!-- Tombol Lihat -->
+                  <a
+                    href="{{ route('admin.students.show', $student->id) }}"
+                    class="btn btn-info btn-sm"
+                  >
+                    Lihat
                   </a>
+
+                  <!-- Tombol Edit -->
+                  <a
+                    href="{{ route('admin.students.edit', $student->id) }}"
+                    class="btn btn-warning btn-sm"
+                  >
+                    Edit
+                  </a>
+
+                  <!-- Tombol Hapus -->
                   <form
                     action="{{ route('admin.students.destroy', $student->id) }}"
                     method="POST"
@@ -49,7 +63,7 @@
                     @method('DELETE')
 
                     <button class="btn btn-danger btn-sm">
-                      <i class="fas fa-trash"></i> Hapus
+                      Hapus
                     </button>
                   </form>
                 </td>
