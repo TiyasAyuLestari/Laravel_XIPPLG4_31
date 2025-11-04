@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>@yield('title', 'AdminLTE - Dilesin')</title>
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    .main-sidebar .sidebar .nav {
+      padding-bottom: 600px;
+    }
+  </style>
   @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="hold-transition sidebar-mini">
@@ -35,11 +42,11 @@
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column">
           <li class="nav-item">
-            <a href="{{ url('/admin/dashboard') }}" class="nav-link active">
+            <a href="{{ url('/admin/dashboard') }}" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>Dashboard</p>
             </a>
-          </li>
+    
         </ul>
       </nav>
     </div>
