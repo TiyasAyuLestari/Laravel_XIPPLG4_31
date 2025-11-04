@@ -46,7 +46,13 @@
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>Dashboard</p>
             </a>
-    
+          </li>
+          <li class="nav-item">
+            <a href="{{ route('admin.students.create') }}" class="nav-link">
+              <i class="nav-icon fas fa-user-plus"></i>
+              <p>Tambah Student</p>
+            </a>
+          </li>
         </ul>
       </nav>
     </div>
